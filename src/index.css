@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: 'Roboto';
+    
+}
+
+body {
+    background-color: rgba(255, 244, 229, 1);
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll  ;
+}
+
+.greeting {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.about-us {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.header {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.form{
+    display: flex;
+    
+}
+.search{
+    width: 800px;
+    border-radius: 10px;
+    border: 0px;
+    position: relative;
+    background-color: #FFF4E5;
+}
+.search-img{
+    position: absolute;
+    place-self: center;
+    left: 770px;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF4E5;
+    padding: 5px;
+    border-radius: 50%;
+}
+input{
+    padding-left: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    background-color: rgba(115, 67, 0, 1);
+    gap: 20px;
+    padding: 20px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #FFF4E5;
+    color: #402600;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(255, 223, 178, 1);
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 50px;
+    padding: 10px;
+    height: 500px;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    place-self: center;
+    border-radius: 30px;
+}
+
+.Card-block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.Card-title {
+    font-weight: 900;
+    font-size: 20px;
+
+
+}
+
+.Card-desc {
+    margin: 0px;
+    width: 100%;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.addToFavoritesBtn {
+    position: absolute;
+    right: 100px;
+    top: 270px;
+    padding: 20px;
+    z-index: -1;
+    rotate: -90deg;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-weight: 900;
+    font-size: 52px;
+}
+
+.welcome {
+
+    font-size: 52px;
+    font-weight: 900;
+    color: #724200;
+    text-align: center;
+    margin: 0;
+}
+
+.description,
+.call-to-action {
+
+    font-size: 18px;
+    font-weight: 733px;
+    color: #402500;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto;
+
+}
+
+.button {
+    display: inline-block;
+    background-color: #724200;
+    color: #fdf6e9;
+    font-weight: 369px;
+    font-size: 20px;
+    padding: 12px 44px;
+    gap: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.button:hover {
+    background-color: #6b472a;
+}
+.favoritesList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.favoriteItem{
+    display: flex;
+    background-color: #FFDFB2;
+    width: 40vh;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 25px;
+    color: #402500;
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    padding: 25px 0px 25px 75px;
+
+}
+.unfavoriteItemBtn{
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 25px;
+}
+.FavoriteHeader{
+    text-align: center;
+}
+.Rectangle1{
+    rotate: 90deg;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+}
+.Rectangle2{
+    height: 25px;
+    width: 25px;
+}
+
+
+/* Блюр фона */
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999; /* Заходите под модальное окно */
+}
+
+/* Стиль для модального окна */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFDFB2;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    z-index: 1000; /* Выше для модального окна */
+    border-radius: 30px;
+   
+}
+
+/* Узнать стиль для изображения в модальном окне */
+.modal-content img {
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+
+/* Стиль для кнопки закрытия */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #FFF4E5;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
